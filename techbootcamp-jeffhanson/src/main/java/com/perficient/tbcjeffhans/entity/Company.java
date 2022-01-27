@@ -1,4 +1,4 @@
-package com.perficient.techbootcampjeffhanson.entity;
+package com.perficient.tbcjeffhans.entity;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;

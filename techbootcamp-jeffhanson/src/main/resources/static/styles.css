@@ -1,5 +1,54 @@
+html {
+    font-family: Calibri;
+}
+
+body {
+    background-color: #9a9a9a;
+}
+
 table {
     border: #333333 solid 2px;
+}
+
+button {
+    border-radius: 6px;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+tr:first-child {
+    background-color: #333333;
+    color: #eeeeee;
+    font-weight: bold;
+}
+
+td:first-child {
+    text-align: center;
+    background-color: #525252;
+    color: #eeeeee;
+}
+
+td:nth-child(2) {
+    background-color: #c4c4c4;
+}
+
+button.edit {
+    background-color: cornflowerblue;
+}
+
+button.delete {
+    background-color: indianred;
+}
+
+button#save {
+    background-color: limegreen;
+}
+.btn {
+    padding: 2px 4px;
+    text-decoration: none;
+    color: #eeeeee;
+    background-color: forestgreen;
+    border-radius: 2px;
 }
 
 .modal p {

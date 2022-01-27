@@ -1,13 +1,11 @@
+
 $(document).ready(function() {
     $.getJSON('/companyList', function(json) {
         var tr=[];
         for (var i = 0; i < json.length; i++) {
-            console.log(`${json[i].name} ${json[i].id}`);
-            tr.push('<tr>');
-            tr.push('<td>' + json[i].id + '</td>');
-            tr.push('<td>' + json[i].name + '</td>');
-            tr.push('<td><button class=\'edit\'>Edit</button>&nbsp;&nbsp;<button class=\'delete\' id=' + json[i].id + '>Delete</button></td>');
-            tr.push('</tr>');
+            console.log(`${json[i].id} ${json[i].name}`);
+            tr.push(`<tr><td>${json[i].id}</td><td>${json[i].name}</td>`);
+            tr.push(`<td><button class='edit'>Edit</button>&nbsp;&nbsp;<button class='delete' id=${json[i].id}>Delete</button></td></tr>`);
         }
         $('table').append($(tr.join('')));
     });
@@ -62,8 +60,8 @@ $(document).ready(function() {
         var id = parent.children("td:nth-child(1)");
         var name = parent.children("td:nth-child(2)");
         var buttons = parent.children("td:nth-child(3)");
-
-        name.html("<input type='text' id='txtName' value='" + name.html() + "'/>");
+        // console.log(name.html());
+        name.html(`<input type='text' id='txtName' value="${name.html()}" />`);
         buttons.html("<button id='save'>Save</button>&nbsp;&nbsp;<button class='delete' id='" + id.html() + "'>Delete</button>");
     });
 

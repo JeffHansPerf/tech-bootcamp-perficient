@@ -1,8 +1,8 @@
-package com.perficient.techbootcampjeffhanson.service;
+package com.perficient.tbcjeffhans.service;
 
 import java.util.List;
 
-import com.perficient.techbootcampjeffhanson.entity.Company;
+import com.perficient.tbcjeffhans.entity.Company;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

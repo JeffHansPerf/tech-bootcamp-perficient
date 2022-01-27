@@ -1,4 +1,4 @@
-package com.perficient.techbootcampjeffhanson;
+package com.perficient.tbcjeffhans;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

@@ -1,4 +1,4 @@
-//package com.perficient.techbootcampjeffhanson.config;
+//package com.perficient.tbcjeffhans.config;
 //
 //import javax.persistence.EntityManagerFactory;
 //import javax.sql.DataSource;
