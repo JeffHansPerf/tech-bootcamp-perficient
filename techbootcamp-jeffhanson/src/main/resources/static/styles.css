@@ -1,3 +1,7 @@
+table {
+    border: #333333 solid 2px;
+}
+
 .modal p {
     margin: 1em 0;
 }

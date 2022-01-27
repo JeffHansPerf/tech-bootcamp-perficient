@@ -14,10 +14,10 @@ public class Company {
     @Id
     @Column(name = "id")
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Integer id;
+    public Integer id;
 
     @Column(name = "name")
-    private String name;
+    public String name;
 
     public Company() {
     }
