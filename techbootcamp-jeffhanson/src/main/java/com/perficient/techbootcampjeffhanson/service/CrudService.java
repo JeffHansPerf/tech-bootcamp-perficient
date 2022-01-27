@@ -1,16 +1,16 @@
+package com.perficient.techbootcampjeffhanson.service;
+
 import java.util.List;
 
+import com.perficient.techbootcampjeffhanson.entity.Company;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 @Service
 public class CrudService {
 
-    private final CrudRepository crudRepository;
-
-    public CrudService(CrudRepository crudRepository) {
-        this.crudRepository = crudRepository;
-    }
+    @Autowired
+    CrudRepository crudRepository;
 
     public List<Company> getCompanyList() {
         return crudRepository.findAll();
