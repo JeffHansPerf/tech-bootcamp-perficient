@@ -62,10 +62,10 @@ $(document).ready(function() {
         var buttons = parent.children("td:nth-child(3)");
         // console.log(name.html());
         name.html(`<input type='text' id='txtName' value="${name.html()}" />`);
-        buttons.html("<button id='save'>Save</button>&nbsp;&nbsp;<button class='delete' id='" + id.html() + "'>Delete</button>");
+        buttons.html("<button class='save'>Save</button>&nbsp;&nbsp;<button class='delete' id='" + id.html() + "'>Delete</button>");
     });
 
-    $(document).delegate('#save', 'click', function() {
+    $(document).delegate('.save', 'click', function() {
         var parent = $(this).parent().parent();
 
         var id = parent.children("td:nth-child(1)");
